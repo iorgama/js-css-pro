@@ -1,0 +1,15 @@
+/** Exercício 02 **/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ff6699;
+  background: linear-gradient(#cc0066, #cc00cc, #ff9900 75%);
+  border-radius: 50%;
+}

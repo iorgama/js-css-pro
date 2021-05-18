@@ -1,0 +1,31 @@
+.container {
+  width: 300px;
+  height: 100px;
+  border: 3px solid black;
+  position: relative;
+}
+
+.item {
+  border: 2px solid purple;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.inicio {
+  top: 20px;
+  left: 20px;
+  background: palevioletred;
+}
+
+.meio {
+  top: 20px;
+  left: 30px;
+  background: violet;
+}
+
+.final {
+  top: 20px;
+  left: 40px;
+  background: palegreen;
+}

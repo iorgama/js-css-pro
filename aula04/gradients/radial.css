@@ -1,0 +1,25 @@
+.container {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
+.formato-1 {
+  background: radial-gradient(closest-side, red 50%, darkred, black);
+}
+
+.formato-2 {
+  background: radial-gradient(closest-side, red 50%, cyan 10%, white);
+}
+
+.formato-3 {
+  background: repeating-radial-gradient(
+    circle at 50%,
+    white,
+    white 10px,
+    red 10px,
+    red 20px
+  );
+}
