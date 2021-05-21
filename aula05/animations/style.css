@@ -73,9 +73,12 @@ div {
 
   50% {
     box-shadow: 4px 4px 4px 4px red;
+    border-radius: 20%;
   }
 
   100% {
     box-shadow: 4px 4px 4px 4px blue;
+    background: greenyellow;
+    transform: rotate(360deg);
   }
 }
