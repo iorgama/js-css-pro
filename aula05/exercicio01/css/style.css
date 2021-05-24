@@ -1,0 +1,74 @@
+body {
+  background-color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  color: navy;
+}
+
+h1 {
+  font-size: 40px;
+  animation: blink 0.5s infinite, write 3.5s steps(23);
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.container-disco-capa {
+  position: relative;
+}
+
+.capa {
+  width: 350px;
+  height: 350px;
+  background-image: url('../img/capa-disco.png');
+  background-repeat: no-repeat;
+}
+
+.capa:hover {
+  width: 350px;
+  height: 350px;
+  background: url('../img/capa-animada.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.disco {
+  position: absolute;
+  z-index: -1;
+  left: 90px;
+  bottom: 10px;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: repeating-radial-gradient(
+    circle at 50%,
+    #000,
+    #000 10px,
+    #333 10px,
+    #333 15px
+  );
+  transition: transform 2s;
+}
+
+.capa:hover ~ .disco {
+  transform: translateX(200px);
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 10px solid navy;
+  }
+
+  100% {
+    border-right: none;
+  }
+}
+
+@keyframes write {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 480px;
+  }
+}
