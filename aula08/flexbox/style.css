@@ -7,9 +7,9 @@ body {
   width: 640px;
   height: 480px;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  /* flex-direction: row-reverse; */
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
 
 .filho {
@@ -18,24 +18,25 @@ body {
   height: 100px;
   color: white;
   font-size: 40px;
+
+  flex-shrink: 1;
 }
 
-.alto {
-  height: 240px;
+.maior {
+  height: 170px;
+}
+.encolhe-mais {
+  flex-shrink: 2;
 }
 
-.primeiro {
-  order: 0;
+.cresce-mais {
+  flex-grow: 2;
 }
 
-.segundo {
-  order: 1;
+.base {
+  flex-basis: 200px;
 }
 
-.terceiro {
-  order: 2;
-}
-
-.quarto {
-  order: 3;
+.quebra {
+  flex: wrap;
 }
