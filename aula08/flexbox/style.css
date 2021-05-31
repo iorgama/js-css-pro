@@ -22,6 +22,10 @@ body {
   flex-shrink: 1;
 }
 
+.diferente {
+  align-self: flex-start;
+}
+
 .maior {
   height: 170px;
 }
