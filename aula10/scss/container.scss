@@ -1,0 +1,51 @@
+.container {
+  width: 640px;
+  height: 480px;
+  border: $borda;
+  @include borda-redonda();
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .foto {
+    width: 256px;
+    height: 256px;
+    border: 1px dashed $branco;
+    background: url(../img/#{$foto});
+    @include borda-redonda();
+    @include sombra($cor: red);
+    // @include sombra(red);
+    @include bolinha-ou-quadrado(true);
+  }
+
+  button {
+    background: $laranja;
+
+    @include botao-custom() {
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background: $fundo;
+      color: $laranja;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    color: $branco;
+
+    &.curso {
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+}

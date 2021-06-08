@@ -1,0 +1,76 @@
+html {
+  height: 100vh; }
+  html body {
+    height: 100vh;
+    margin: 0;
+    background: #002244;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    html body .container {
+      width: 640px;
+      height: 480px;
+      border: 2px solid white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      html body .container h1 {
+        color: white;
+        text-align: center; }
+      html body .container .foto {
+        width: 256px;
+        height: 256px;
+        border: 1px dashed white;
+        background: url(../img/medico.png);
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px red;
+        border-radius: 50%; }
+        html body .container .foto else {
+          border-radius: 0; }
+      html body .container button {
+        background: orange;
+        padding: 8px;
+        font-family: Arial;
+        border: 1px solid white;
+        box-shadow: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold; }
+        html body .container button:hover {
+          background: #002244;
+          color: orange;
+          cursor: pointer; }
+      html body .container p {
+        color: white; }
+        html body .container p.curso {
+          font-size: 22px;
+          font-weight: bold; }
+    html body footer {
+      background: orange;
+      position: fixed;
+      bottom: 0;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+      color: white; }
+
+.item-red {
+  background-color: red; }
+
+.item-yellow {
+  background-color: yellow; }
+
+.item-orange {
+  background-color: orange; }
+
+ul:nth-child(1) {
+  background-color: pink; }
+
+ul:nth-child(2) {
+  background-color: pink; }
+
+ul:nth-child(3) {
+  background-color: pink; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+@mixin borda-redonda {
+  border-radius: 10px;
+}
+
+@mixin sombra($x: 2px, $cor: $branco) {
+  box-shadow: $x 2px 2px 2px $cor;
+}
+
+@mixin botao-custom {
+  padding: 8px;
+  font-family: Arial;
+  border: 1px solid $branco;
+  box-shadow: none;
+
+  @content;
+}
+
+@mixin bolinha-ou-quadrado($bolinha: false) {
+  @if $bolinha {
+    border-radius: 50%;
+  }
+  else {
+    border-radius: 0;
+  }
+}

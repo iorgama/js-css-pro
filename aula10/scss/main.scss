@@ -1,0 +1,35 @@
+@import 'var';
+@import 'mixins';
+
+html {
+  height: 100vh;
+
+  body {
+    height: 100vh;
+    margin: 0;
+    background: $fundo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @import 'container';
+
+    @import 'footer';
+  }
+}
+
+//lista em sass
+$cores: red, yellow, orange;
+
+@each $cor in $cores {
+  .item-#{$cor} {
+    background-color: $cor;
+  }
+}
+
+//for
+@for $i from 1 through 3 {
+  ul:nth-child(#{$i}) {
+    background-color: pink;
+  }
+}

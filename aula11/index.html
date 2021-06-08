@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+
+<body>
+
+  <script>
+    let cursos = ['git', 'css pro', 'js pro'];
+    console.log('Exemplo');
+    console.info('Exemplo');
+    console.warn('Exemplo');
+    console.error('Exemplo')
+    console.dir(cursos);
+    console.table(cursos);
+    console.log('----------------------');
+
+    function calculaMedia(notas) {
+      let soma = 0;
+      let media = 0;
+
+      for (let i = 0; i < notas.length; i++) {
+        soma += notas[i];
+      }
+
+      media = soma / notas.length;
+      return media;
+    }
+
+    let todasNotas = [10, 8, 7, 3];
+
+    console.log(calculaMedia(todasNotas));
+
+  </script>
+</body>
+
+</html>
