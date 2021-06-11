@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 03</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h2>Lista de produtos</h2>
+    <table style="width:100%">
+      <tr>
+        <th>Nome</th>
+        <th>Marca</th>
+        <th>Preço</th>
+      </tr>
+      <tr>
+        <td id="nome"></td>
+        <td id="preco"></td>
+        <td id="marca"></td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    function inserirDadosTabela(dado) {
+      Object.keys(dado).forEach(function (item) {
+        document.getElementById(item).innerHTML = dado[item];
+      });
+    }
+
+    let produto = {
+      nome: "Televisão",
+      preco: 1599.66,
+      marca: "LG"
+    };
+
+    inserirDadosTabela(produto);
+
+
+
+    // Seguindo a estrutura JSON acima, implemente um HTML VAZIO,
+    // e popule os elementos com os dados do JSON.
+    // DICA: document.getElementById
+  </script>
+</body>
+
+</html>
