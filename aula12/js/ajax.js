@@ -15,3 +15,8 @@ let btnProdutos = document.getElementById('btn-produtos');
 btnProdutos.addEventListener('click', function () {
   carregaDados('produtos.html');
 });
+
+let btnCarros = document.getElementById('btn-carros');
+btnCarros.addEventListener('click', function () {
+  carregaDados('carros.html');
+});
